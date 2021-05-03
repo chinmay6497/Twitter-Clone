@@ -1,6 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
-import TwitterIcon from "@material-ui/icons/Twitter";
+import humming from './humming.jpg';
 import SidebarOption from "./SidebarOption";
 import HomeIcon from "@material-ui/icons/Home";
 import SearchIcon from "@material-ui/icons/Search";
@@ -15,8 +15,7 @@ import { Button } from "@material-ui/core";
 function Sidebar() {
   return (
     <div className="sidebar">
-      <TwitterIcon className="sidebar__twitterIcon" />
-
+      <img className="sidebar__humming" src={humming} alt="humming"/>
       <SidebarOption active Icon={HomeIcon} text="Home" />
       <SidebarOption Icon={SearchIcon} text="Explore" />
       <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" />
@@ -28,7 +27,7 @@ function Sidebar() {
 
       {/* Button -> Tweet */}
       <Button variant="outlined" className="sidebar__tweet" fullWidth>
-        Tweet
+        Send out a hummmm....
       </Button>
     </div>
   );
